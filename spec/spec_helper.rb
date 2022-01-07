@@ -99,6 +99,7 @@ RSpec.configure do |config|
 =end
 
 ENV['RACK_ENV'] = 'test'
+require 'features/web_helpers'
 
 # require our Sinatra app file
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
